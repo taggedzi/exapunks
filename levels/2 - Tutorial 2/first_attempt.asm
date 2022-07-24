@@ -1,4 +1,6 @@
 NOTE 9,8,2
+
+; XA
 LINK 800
 GRAB 200
 COPY F X
