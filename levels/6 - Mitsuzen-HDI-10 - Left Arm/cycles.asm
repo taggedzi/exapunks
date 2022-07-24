@@ -1,0 +1,23 @@
+NOTE 96,50,6
+NOTE I know this can get down into the 30's but I haven't figured it out yet.
+
+; XA
+LINK 800
+MARK READ
+@REP 10
+ADDI #NERV 9949 X
+SUBI X 9949 M
+@END
+JUMP READ
+
+; XB
+LINK 800
+@REP 4
+LINK 1
+@END
+MARK WRITE
+@REP 10
+SUBI M 9879 X
+ADDI 9879 X #NERV
+@END
+JUMP WRITE
