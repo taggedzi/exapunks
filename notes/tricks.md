@@ -1,10 +1,10 @@
-# Tricks to help with cycles/size/activity?
+# Tricks to help with reducing cycles/size/activity in EXAPUNKS?
 
-Note Reading this MIGHT be considered by some to be spoilers. These are things I learned on my way that I didn't want to forget. But IF you are serious about not knowing spoilers don't read any further. You have been warned.
+These are tips and tricks for playing the game Exapunks. I explain tricks to reduce cycles, size, and possibly activity. Note Reading this MIGHT be considered by some to be spoilers. These are things I learned on my way that I didn't want to forget. But IF you are serious about not knowing spoilers don't read any further. You have been warned.
 
 ## Cycles:
 
-### Testing in Loops
+### Skip the testing in loops (sometimes)
 
 TJMP and FJMP don't care if the test was performed by you or a TEST statement. You can use the register T to skip needing to test sometimes. This can be very helpful for making loops
 ```
@@ -28,6 +28,7 @@ TJMP LOOP
 This saves the cycle of having to TEST durring each itteration, while a small change, when you have to loop over something 1000 times it adds up fast. You can itterate UP or DOWN, just make sure to adjust your test condition to properly test for the one you are looking for.
 
 ### Using F like an R
+
 You can reference a file pointer directly just as you would a R/N skipping the need to copy out of a file then manipulate.
 ```
 COPY F X
@@ -43,6 +44,7 @@ MULI F F F
 ```
 
 ### Using @REP and @{}
+
 If you know you need to perform an action a certain number of times in advance you can use @REP to drastically reduce your cycles, at the cost of the size of your file.  Here is an example:
 ```
 NOTE this code is used to count from 9 down to 0 and write to a file
@@ -93,5 +95,9 @@ SUBI X 9949 X
 COPY X F
 ```
 This can be done using **both the upper and lower bounds**. It could even be made smaller by outputting the SUBI directly to F if you didn't need the value stored in X after the snippet.
+
+### Avoid DROP and HALT
+
+When trying to shave off cycles and size DROP and HALT are waisteful unless they are absolutely needed.  When a EXA runs out of viable instructions it will automatically drop any files and self destruct. There are times that a DROP or HALT are required, but only use them when you must!
 
 
