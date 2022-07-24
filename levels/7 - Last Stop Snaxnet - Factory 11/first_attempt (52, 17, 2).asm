@@ -1,4 +1,5 @@
 NOTE 52, 17, 2
+NOTE Remove PEANUTS from Peanut Blast recipe.
 
 ; XA
 MARK GET_NUTS
