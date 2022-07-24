@@ -42,7 +42,7 @@ You can even reference F multiple times in the same statement. Each time you cal
 MULI F F F
 ```
 
-### Using @REP
+### Using @REP and @{}
 If you know you need to perform an action a certain number of times in advance you can use @REP to drastically reduce your cycles, at the cost of the size of your file.  Here is an example:
 ```
 NOTE this code is used to count from 9 down to 0 and write to a file
