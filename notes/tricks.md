@@ -1,5 +1,7 @@
 # Tricks to help with cycles/size/activity?
 
+Note Reading this MIGHT be considered by some to be spoilers. These are things I learned on my way that I didn't want to forget. But IF you are serious about not knowing spoilers don't read any further. You have been warned.
+
 ## Cycles:
 
 ### Testing in Loops
