@@ -39,3 +39,33 @@ You can even reference F multiple times in the same statement. Each time you cal
 ```
 MULI F F F
 ```
+
+### Using @REP
+If you know you need to perform an action a certain number of times in advance you can use @REP to drastically reduce your cycles, at the cost of the size of your file.  Here is an example:
+```
+NOTE this code is used to count from 9 down to 0 and write to a file
+COPY 9 X
+MARK LOOP
+TEST X = 9
+TJMP DONE
+SUBI X 1 X
+COPY X F
+JUMP LOOP
+```
+This COULD be expanded out to this to dramatically reduce the number of cycles because it is bypassing the TESTING
+```
+NOTE this code is used to count from 9 down to 0 and write to a file
+COPY 9 X
+@REP 9
+SUBI X 1 X
+COPY X F
+@END
+```
+OR a slightly more advanced
+```
+NOTE this code is used to count from 9 down to 0 and write to a file
+COPY 9 X
+@REP 9
+SUBI X @{1,1) F
+@END
+```
