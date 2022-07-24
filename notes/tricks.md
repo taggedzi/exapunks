@@ -71,3 +71,32 @@ COPY 9 X
 SUBI X @{1,1) F
 @END
 ```
+
+### Clamping (or Cleaning) Numbers
+
+There are a number of times where you have to validate the RANGE of a number to withing some MIN or MAX value (or both). The conventional way I found of doing this took a lot of cycles and code. Until one day I saw someone else do this clever trick and I've made use of it since.  Number are bound by the program to a max of 9999 and a min of -9999.  IF you add 1 to 9999 you get 9999.  If you subtract 1 from -9999 you get -9999.  Number just CAN't be any bigger or smaller due to the constraints of the game.  They took advantage of this. here is an example.
+```
+NOTE This limits the MAXIMUM of a number to 50
+COPY 100 X  ; This number is to be clamped to a max of 50
+TEST X > 50
+TJMP OUTPUT
+COPY 50 X   ; Forcibly set X = 50 because it is too big
+MARK OUTPUT
+COPY X F
+```
+This can be reduced significantly (making it slightly LESS readable) but much faster and smaller.
+```
+NOTE This limits the MAXIMUM of a number to 50
+COPY 100 X  ; This number is to be clamped to a max of 50
+ADDI X 9949 X
+SUBI X 9949 X
+COPY X F
+```
+This can be done using both the upper and lower bounds. It could even be made smaller by outputting the SUBI directly to F if you didn't need the value stored in X after the snippet.
+
+
+
+
+COPY X F
+```
+
