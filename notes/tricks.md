@@ -74,7 +74,7 @@ SUBI X @{1,1) F
 
 ### Clamping (or Cleaning) Numbers
 
-There are a number of times where you have to validate the RANGE of a number to withing some MIN or MAX value (or both). The conventional way I found of doing this took a lot of cycles and code. Until one day I saw someone else do this clever trick and I've made use of it since.  Numbers are bound by the program to a max of 9999 and a min of -9999.  IF you add 1 to 9999 you get 9999.  If you subtract 1 from -9999 you get -9999.  Number just CAN't be any bigger or smaller due to the constraints of the game.  They took advantage of this. Here is an example taken directly from the Left Arm mission of the game.
+There are a number of times where you have to validate the RANGE of a number to withing some MIN or MAX value (or both). The conventional way I found of doing this took a lot of cycles and code. Until one day I saw someone else do this clever trick and I've made use of it since.  Numbers are bound by the program to a max of 9999 and a min of -9999.  IF you add 1 to 9999 you get 9999.  If you subtract 1 from -9999 you get -9999.  Numbers just CAN't be any bigger or smaller due to the constraints of the game.  They took advantage of this. Here is an example taken directly from the Left Arm mission of the game.
 ```
 NOTE This limits the MAXIMUM of a number to 50
 COPY 100 X  ; This number is to be clamped to a max of 50
