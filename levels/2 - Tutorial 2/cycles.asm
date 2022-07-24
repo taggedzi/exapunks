@@ -1,4 +1,6 @@
 NOTE 7,6,2
+
+; XA
 LINK 800
 GRAB 200
 ADDI F F X
