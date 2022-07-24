@@ -98,6 +98,9 @@ This can be done using **both the upper and lower bounds**. It could even be mad
 
 ### Avoid DROP and HALT
 
-When trying to shave off cycles and size DROP and HALT are waisteful unless they are absolutely needed.  When a EXA runs out of viable instructions it will automatically drop any files and self destruct. There are times that a DROP or HALT are required, but only use them when you must!
+When trying to shave off cycles and size DROP and HALT are waisteful unless they are absolutely needed.  When a EXA runs out of viable instructions it will automatically drop any files and self destruct. When this happens it does not count towards your cycles or size. There are times that a DROP or HALT are required, but only use them when you must!
+
+
+## Have any tips you'd like to add? let me know.
 
 
