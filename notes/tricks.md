@@ -35,3 +35,7 @@ Can be reduced to
 ```
 ADDI F 1 X
 ```
+You can even reference F multiple times in the same statement. Each time you call it the entry pointer in the file will advance though. For example if you wanted to read 2 entries from a file and output the result as the third entry in the file you could do this:
+```
+MULI F F F
+```
