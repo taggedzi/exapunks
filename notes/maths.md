@@ -74,7 +74,7 @@ MARK LOOP
     JUMP LOOP
 ```
 
-You can replace `9` with the number of COLUMNS in your grid for both the DIVI and MODI calculation.  When X gets to any multiple of 9 it will increment the columns. When X not an exact multiple of 9 MODI will give you your row count.  Now in this exaple I do not break out of the loop intentionally, you could theoretically come up with your own exit criteria.
+You can replace `9` with the number of COLUMNS in your grid for both the DIVI and MODI calculation.  When X gets to any multiple of 9 it will increment the columns. When X not an exact multiple of 9 MODI will give you your row count.  Now in this example I do not break out of the loop intentionally, you could theoretically come up with your own exit criteria.
 
 MODI = the remainder left over when you divide X by 9. (Don't try with Negative numbers unless you know what you are doing, it gets wierd.)
 DIVI = the whole number division of X divided by 9. 
