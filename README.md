@@ -19,7 +19,7 @@ The files created for individual levels are in the appropriate Level folders. Wh
 
 ## How to read my files
 
-At the top of the file will be a NOTE that lists the Cycles, Size, Actions.
+At the top of the file will be a `NOTE C, S, A` that lists the number (or count of) Cycles, Size, Actions.
 
 I include the code for ALL initial bots in the same file. I distinguish between bots with comments like `; XA` or `; XB` etc.
 
