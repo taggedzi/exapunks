@@ -17,6 +17,7 @@ The files created for individual levels are in the appropriate Level folders. Wh
 - [EXApunks Wiki](https://exapunks.fandom.com/wiki/Exapunks_Wiki) Sadly the wiki is kind underwhelming but it does have some useful info.
 - [EXApunks Code Patterns](https://journal.3960.org/posts/2018-08-18-code-patterns-for-exapunks/) <-Amazing
 - [EXApunks Network communication](https://journal.3960.org/posts/2018-08-22-network-communication-exapunks/) <- Also Amazing
+- [VirtualNetwork+ Scripting Reference](https://www.zachtronics.com/virtualnetwork/)
 
 ## How to read my files
 
