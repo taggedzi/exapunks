@@ -53,7 +53,7 @@ SUBI X 9909 X  ;X = 90
 ```
 if M = 5 
 ```
-NOTE TESTING the MIN Bounds
+NOTE TESTING the MAX Bounds
 ADDI 5 9909 X ;X = 9914
 SUBI X 9909 X ;X = 5
 ```
