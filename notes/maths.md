@@ -79,19 +79,26 @@ MODI = the remainder left over when you divide X by 9. (Don't try with Negative 
 DIVI = the whole number division of X divided by 9. 
 
 So when X = 0
+```
 DIVI 0 9 ;COL = 0
 MODI 0 9 ;ROW = 0
+```
 
 When X = 1
+```
 DIVI 1 9 ;COL = 0 
 MODI 1 9 ;ROW = 1
-
+```
 ...
 
 When X = 11
+```
 DIVI 11 9 ;COL = 1 
 MODI 11 9 ;ROW = 2 
+```
 
 When X = 12
+```
 DIVI 12 9 ;COL = 1 
 MODI 12 9 ;ROW = 3 
+```
