@@ -56,3 +56,21 @@ MARK READING
 NOTE When the loop exits the file pointer will be at the entry AFTER what you were searching for. 
 COPY F X  
 ```
+
+## Super Secret Technique - Spamming Bots
+
+In some circumstances it can be more efficient to spam more bots to carry out instructions than to write a loop.
+
+``` 
+MARK READ
+  COPY #NERV M
+  JUMP READ
+```
+
+In ths case you can do this and it is significantly more efficient. In my test using the code below was 28 cycles faster for one batch.
+
+```
+MARK READ
+  REPL READ
+  COPY #NERV M
+```
