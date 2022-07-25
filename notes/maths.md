@@ -48,7 +48,7 @@ I know that seems odd but it is exploiting the fact that numbers in the game hav
 if M = 98 here is what happens:
 ```
 NOTE TESTING the MAX Bounds
-ADDI 98 9909 X ;X = 9999
+ADDI 98 9909 X ;X = 9999  NOTE the math here is incorrect, we hit the max int size and it is capped at 9999
 SUBI X 9909 X  ;X = 90
 ```
 if M = 5 
