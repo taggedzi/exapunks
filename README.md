@@ -7,7 +7,7 @@ The files created for individual levels are in the appropriate Level folders. Wh
 ## Resources in my repo
 
 - [Solutions to levels](https://github.com/taggedzi/exapunks/tree/main/levels)
-- [Tips and Tricks](https://github.com/taggedzi/exapunks/blob/main/notes/tricks.md)
+- [My Notes](https://github.com/taggedzi/exapunks/blob/main/notes)
 - [Quick Command Reference](https://github.com/taggedzi/exapunks/blob/main/notes/quick_reference.txt)
 
 ## Other Resources
